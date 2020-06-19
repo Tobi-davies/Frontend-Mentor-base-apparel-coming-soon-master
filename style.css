@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: url("./images/bg-pattern-desktop.svg");
+  font-family: 'Josefin Sans', sans-serif;
+}
+.grid {
+  display: flex;
+  margin-bottom: 30px;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+  max-height: 100vh;
+}
+.box1 {
+  width: 62%;
+}
+.hero {
+  width: 48%;
+}
+.left {
+  width: 65%;
+  margin: auto;
+  margin-top: 70px;
+}
+.logo {
+  margin-bottom: 100px;
+}
+.desk h1 {
+  font-size: 53px;
+  color:hsl(0, 6%, 24%);
+  letter-spacing: 15px;
+  width: 40%;
+  margin-bottom: 25px;
+}
+.desk span {
+  color:hsl(0, 36%, 70%);
+  font-weight: 300;
+}
+.desk p {
+  font-size: 14px;
+  color:hsl(0, 36%, 70%);
+  line-height: 25px;
+  width: 75%;
+  margin-bottom: 25px;
+}
+.desk input {
+  height: 47px;
+  width: 74%;
+  border-radius: 30px;
+  border: 1px solid hsl(0, 36%, 70%);
+  padding-left: 20px;
+}
+::placeholder {
+  color: hsl(0, 36%, 70%);
+}
+.desk button {
+  border: none;
+  height:47px;
+  width: 15%;
+  border-radius: 30px;
+  position: absolute;
+  right: 23%;
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  cursor: pointer;
+}
+.desk button:hover, .desk button:active {
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 80%, 86%));
+  box-shadow: 0px 5px 10px  hsl(0, 80%, 86%);
+  transform: scale(1.1);
+}
+.mssg {
+  color: hsl(0, 93%, 68%);
+  font-size: 14px;
+  margin-top: 5px;
+  margin-left: 30px;
+  display: none;
+}
+#forms {
+  position: relative;
+}
+.error-img {
+  position: absolute;
+  top:17%;
+  right: 40%;
+  display: none;
+}
+.error .error-img, .error .mssg {
+  display: block;
+}
+.error input {
+  border: 2px solid hsl(0, 93%, 68%);
+}
+.attribution { 
+  font-size: 15px; 
+  text-align: center; 
+}
+.attribution a { 
+  color: hsl(0, 36%, 70%); 
+  text-decoration: none;
+}
+.attribution a:hover { 
+  color: black;
+}
+
+@media (min-width:986px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media (max-width:985px) {
+  .grid {
+    display: none;
+  }
+  .heroimg2 {
+    background-image: url("./images/hero-mobile.jpg");
+    height: 55vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  body {
+    background-image: none;
+  }
+  .moblogo {
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .right {
+    background-color: hsl(0, 50%, 94%);
+    overflow: hidden;
+  }
+  .right h1 {
+    font-size: 50px;
+    color:hsl(0, 6%, 24%);
+    letter-spacing: 15px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 25px;
+    padding-top: 45px;
+    text-align: center;
+  }
+  .right span {
+    color:hsl(0, 36%, 70%);
+    font-weight: 300;
+  }
+  .right p {
+    font-size: 14px;
+    color:hsl(0, 36%, 70%);
+    line-height: 25px;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  form {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  .right input[type="email"] {
+    height: 43px;
+    width: 54%;
+    border-radius: 30px;
+    border: 1px solid hsl(0, 36%, 70%);
+    background-color: hsl(0, 50%, 94%);
+  }
+  ::placeholder {
+    color: hsl(0, 36%, 70%);
+    text-align: left;
+    padding-left: 40px;
+  }
+  .right button {
+    border: none;
+    height:43px;
+    width: 10%;
+    border-radius: 30px;
+    position: absolute;
+    right: 23%;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    cursor: pointer;
+  }
+  .right button:hover, .right button:active {
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 80%, 86%));
+    box-shadow: 0px 5px 10px  hsl(0, 80%, 86%);
+    transform: scale(1.1);
+  }
+  
+  .error-img-mob {
+    position: absolute;
+    top: 15%;
+    right: 35%;
+    display: none;
+  }
+  .msg {
+    color: hsl(0, 93%, 68%);
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 30px;
+    text-align: center;
+    display: none;
+  }
+  .error .error-img-mob, .error .msg {
+    display: block;
+  }
+  .error #email {
+    border: 2px solid hsl(0, 93%, 68%);
+  }
+  .attribution {
+    margin-bottom: 50px;
+  }
+  .deskfoot {
+    display: none;
+  }
+}
+@media (max-width:650px) {
+  .grid {
+    display: none;
+  }
+  .heroimg2 {
+    height: 50vh;
+  }
+  .right h1 {
+    font-size: 48px;
+    letter-spacing: 13px;
+    margin-bottom: 25px;
+    margin-top: 55px;
+  }
+  .right p {
+    font-size: 14px;
+    width: 80%;
+    margin-bottom: 35px;
+  }
+  .right input[type="email"] {
+    width: 58%;
+  }
+  ::placeholder {
+    padding-left: 20px;
+  }
+  .right button {
+    width: 15%;
+    position: relative;
+    top: 4px;
+    right: 45px;
+  }
+  .error-img-mob {
+    right: 38%;
+    top: 22%;
+  }
+}
